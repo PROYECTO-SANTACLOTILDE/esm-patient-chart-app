@@ -1,5 +1,4 @@
 import type { Encounter, Visit } from '@openmrs/esm-framework';
-import { type MappedEncounter } from '../packages/esm-patient-chart-app/src/visit/visits-widget/visit.resource';
 
 export const mockVisitTypes = [
   {
@@ -300,78 +299,6 @@ export const visitOverviewDetailMockDataNotEmpty: { data: { results: Array<Visit
     ],
   },
 };
-
-export const mockMappedEncounters: Array<MappedEncounter> = [
-  {
-    id: '979d38e3-fb68-47cf-843f-2b0263690f49',
-    datetime: '2022-01-18T16:25:27.000+0000',
-    encounterType: 'Admission',
-    editPrivilege: null,
-    form: {
-      uuid: '17e3bc1a-d319-408f-8b57-73e367f7fa80',
-      display: 'POC Consent Form',
-    },
-    obs: [],
-    provider: '--',
-    visitUuid: '7b0f5697-27e3-40c4-8bae-f4049abfb4ed',
-    visitType: 'Facility Visit',
-  },
-  {
-    id: '09eadbdd-6924-4126-8a3b-c92aac04b8e7',
-    datetime: '2021-08-03T00:47:48.000+0000',
-    encounterType: 'Visit Note',
-    editPrivilege: null,
-    form: null,
-    obs: [
-      {
-        uuid: 'a93ad7a9-66d8-4952-ae2e-82b59c8c5989',
-        concept: {
-          uuid: '1421AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA',
-          display: 'Immunization history',
-          conceptClass: {
-            uuid: '8d491a9a-c2cc-11de-8d13-0010c6dffd0f',
-            display: 'Finding',
-          },
-        },
-        display: 'Immunization history: asd, 333, 2021-08-05, 2021-08-02, 1.0, ',
-        groupMembers: null,
-        value: null,
-        obsDatetime: null,
-      },
-      {
-        uuid: '914965f1-059a-4e16-956a-b3bb9781b12a',
-        concept: {
-          uuid: '1421AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA',
-          display: 'Immunization history',
-          conceptClass: {
-            uuid: '8d491a9a-c2cc-11de-8d13-0010c6dffd0f',
-            display: 'Finding',
-          },
-        },
-        display: 'Immunization history: 2021-08-02, 333, asd, , 1.0, 2021-08-05',
-        groupMembers: null,
-        value: null,
-      },
-    ],
-    provider: 'User One',
-    visitUuid: '7b0f5697-27e3-40c4-8bae-f4049abfb4ed',
-    visitType: 'Facility Visit',
-  },
-  {
-    id: 'ff9a0035-8698-47dc-b608-bd6ec2646e5c',
-    datetime: '2021-07-05T10:07:18.000+0000',
-    encounterType: 'Consultation',
-    editPrivilege: 'edit',
-    form: {
-      uuid: '9e1a0c68-ca19-3482-9ffb-0a6b4e591c2a',
-      display: 'Covid 19',
-    },
-    obs: [],
-    provider: 'Dennis The Doctor',
-    visitUuid: '7b0f5697-27e3-40c4-8bae-f4049abfb4ed',
-    visitType: 'Facility Visit',
-  },
-];
 
 export const mockEncounter: Encounter = {
   uuid: '3b4daf81-7372-475c-ba5d-13c9c21d8ab1',
